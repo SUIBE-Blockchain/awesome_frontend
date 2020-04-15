@@ -1,0 +1,54 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+button {
+  display: block;
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border: 2px solid #000;
+  backgrond-color: #FFF;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: .25rem;
+  box-shadow: 4px 4px 0 0 #000;
+  -webkit-transition: .15s ease;
+  transition: .15s ease;
+}
+button:hover, button:focus {
+  outline: 0;
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+  box-shadow: 0 0 0 0 #000;
+  background-color: #f2f5f7;
+}
+
+p {
+  font-size: .875rem;
+  margin-top: 2rem;
+}
